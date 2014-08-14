@@ -46,9 +46,7 @@ function flickrWidgetAdmin() {
 
 }
 
-register_sidebar_widget('Woo - Flickr', 'flickrWidget');
-register_widget_control('Woo - Flickr', 'flickrWidgetAdmin', 400, 200);
-
+wp_register_sidebar_widget('woo-flickr-widget', 'Woo - Flickr', 'flickrWidget', 'flickrWidgetAdmin');
 
 // =============================== Ad 125x125 widget ======================================
 function adsWidget()
@@ -83,7 +81,6 @@ if (get_option('woo_ads_rotate') == 'true') {
 <?php
 
 }
-register_sidebar_widget('Woo - Ads 125x125', 'adsWidget');
 
 function adsWidgetAdmin() {
 
@@ -102,6 +99,6 @@ function adsWidgetAdmin() {
 	echo '<input type="hidden" id="update_ads" name="update_ads" value="1" />';
 
 }
-register_widget_control('Woo - Ads 125x125', 'adsWidgetAdmin', 200, 200);
+wp_register_sidebar_widget('woo-ads-125x125-widget', 'Woo - Ads 125x125', 'adsWidget', 'adsWidgetAdmin');
 
 ?>
