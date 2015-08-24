@@ -12,7 +12,7 @@ function flickrWidget()
 
 <div id="flickr">
 	
-	<h3 id="myPhotos" class="replace"><?php _e('My photos. Now you know me.',woothemes); ?></h3>
+	<h3 id="myPhotos" class="replace"><?php _e('My photos. Now you know me.','woothemes'); ?></h3>
 
 	<script type="text/javascript" src="http://www.flickr.com/badge_code_v2.gne?count=<?php echo $number; ?>&amp;display=latest&amp;size=s&amp;layout=x&amp;source=user&amp;user=<?php echo $id; ?>"></script>        
 	

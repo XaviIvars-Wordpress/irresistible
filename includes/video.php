@@ -1,6 +1,6 @@
 <div id="videos">
 
-    <h3 id="myVideos" class="replace"><?php _e('My videos. Featured videos.',woothemes); ?></h3>
+    <h3 id="myVideos" class="replace"><?php _e('My videos. Featured videos.','woothemes'); ?></h3>
 
     <div class="box1" id="video">
         

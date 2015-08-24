@@ -5,7 +5,7 @@
 		
 		<div id="footerWrap">
 		
-			<p id="copy"><?php _e('Copyright',woothemes); ?> &copy; <?php echo date('Y'); ?> <a href="#"><?php bloginfo('name'); ?></a>. <?php _e('All rights reserved',woothemes); ?>.</p>
+			<p id="copy"><?php _e('Copyright','woothemes'); ?> &copy; <?php echo date('Y'); ?> <a href="#"><?php bloginfo('name'); ?></a>. <?php _e('All rights reserved','woothemes'); ?>.</p>
 			<?php
 			if ( function_exists('has_nav_menu') && has_nav_menu('footer-menu') ) {
 				wp_nav_menu( array( 'depth' => 1, 'sort_column' => 'menu_order', 'container' => 'ul', 'menu_id' => 'footerNav', 'theme_location' => 'footer-menu' ) );

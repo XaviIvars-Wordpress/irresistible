@@ -15,11 +15,11 @@ function custom_comment($comment, $args, $depth) {
     <div class="col-right">
 		<?php comment_text() ?>
         <?php if ($comment->comment_approved == '0') : ?>
-        <p><em><?php _e('Your comment is awaiting moderation.',woothemes); ?></em></p>
+        <p><em><?php _e('Your comment is awaiting moderation.','woothemes'); ?></em></p>
         <?php endif; ?>
     </div>
             
-	<?php echo comment_reply_link(array('before' => '<span class="reply">', 'after' => '</span>', 'reply_text' => __('Reply to this comment',woothemes), 'depth' => $depth, 'max_depth' => $args['max_depth'] ));  ?>
+	<?php echo comment_reply_link(array('before' => '<span class="reply">', 'after' => '</span>', 'reply_text' => __('Reply to this comment','woothemes'), 'depth' => $depth, 'max_depth' => $args['max_depth'] ));  ?>
 
 	<div class="fix"></div>
  

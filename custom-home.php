@@ -4,7 +4,7 @@
 		
 			<div id="main">
 			
-                <h3 id="myWritings" class="replace"><?php _e('My Writings. My Thoughts.',woothemes); ?></h3>
+                <h3 id="myWritings" class="replace"><?php _e('My Writings. My Thoughts.','woothemes'); ?></h3>
 				
 				<div class="box1 clearfix">
 				
@@ -14,7 +14,7 @@
 					<?php while (have_posts()) : the_post(); ?>
 
                         <div class="post clearfix">
-                            <h3 id="post-<?php the_ID(); ?>"><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3                            ><span class="txt0"><?php edit_post_link('Edit', '', ''); ?> // <?php the_time('F jS, Y') ?> // <?php comments_popup_link(__('No Comments &#187;', woothemes), __('1 Comment &#187;',woothemes), __('% Comments &#187;',woothemes)); ?> // <?php the_category(', ') ?></span>
+                            <h3 id="post-<?php the_ID(); ?>"><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3                            ><span class="txt0"><?php edit_post_link('Edit', '', ''); ?> // <?php the_time('F jS, Y') ?> // <?php comments_popup_link(__('No Comments &#187;', 'woothemes'), __('1 Comment &#187;','woothemes'), __('% Comments &#187;','woothemes')); ?> // <?php the_category(', ') ?></span>
                         
 	                        <?php the_excerpt() ?>
     
@@ -23,11 +23,11 @@
 					<?php endwhile; ?>					
 					<?php else : ?>
 					
-					<h3 class='center'><?php _e('No posts found.',woothemes); ?></h3>
+					<h3 class='center'><?php _e('No posts found.','woothemes'); ?></h3>
 					
 					<?php endif; ?>
 					
-					<p class="fr"><a href="<?php echo get_option('woo_home_archives'); ?>"><?php _e('View Archives',woothemes); ?></a></p>
+					<p class="fr"><a href="<?php echo get_option('woo_home_archives'); ?>"><?php _e('View Archives','woothemes'); ?></a></p>
 				
 				</div>
 				
@@ -57,16 +57,16 @@
                 
                 <div id="flickr">
                     
-                    <h3 id="myPhotos" class="replace"><?php _e('My photos. Now you know me.',woothemes); ?></h3>
+                    <h3 id="myPhotos" class="replace"><?php _e('My photos. Now you know me.','woothemes'); ?></h3>
                 
                     <script type="text/javascript" src="http://www.flickr.com/badge_code_v2.gne?count=<?php echo get_option('woo_home_flickr_count'); ?>&amp;display=latest&amp;size=s&amp;layout=x&amp;source=user&amp;user=<?php echo get_option('woo_home_flickr_user'); ?>"></script>        
                     
                     <div class="clear"></div>
-					<a href="<?php echo get_option('woo_home_flickr_url'); ?>" class="replace"><p id="browseFlickr"><span class="replace"><?php _e('Browse Flickr',woothemes); ?></span></p></a>
+					<a href="<?php echo get_option('woo_home_flickr_url'); ?>" class="replace"><p id="browseFlickr"><span class="replace"><?php _e('Browse Flickr','woothemes'); ?></span></p></a>
                 
                 </div>
 				
-				<h3 id="myLifestream" class="replace"><?php _e('My lifestream. Stay updated with me.',woothemes); ?></h3>
+				<h3 id="myLifestream" class="replace"><?php _e('My lifestream. Stay updated with me.','woothemes'); ?></h3>
 				
 				<div class="box1 clearfix">	
 					
@@ -78,7 +78,7 @@
 
 				<div id="myfavblog" class="fr">			
 					
-					<h3 id="myFavblog" class="replace"><?php _e('My favblog. Feeds from them.',woothemes); ?></h3>
+					<h3 id="myFavblog" class="replace"><?php _e('My favblog. Feeds from them.','woothemes'); ?></h3>
 					
 					<div class="box1">
                         <ul class="list2">
